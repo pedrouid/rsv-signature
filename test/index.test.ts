@@ -4,18 +4,18 @@ import * as RSV from '../src';
 
 const deserialized = {
   r: new BN(
-    '1df4e7bbad23da5e5266c2d724b5c892c9cc25cdb8a5c3371bac53013f3d527',
+    '3e243c5b004c89cd9c66fd1c8361c2d42226816214ac113f441027f165c6a78',
     'hex'
   ),
   s: new BN(
-    '715136cb5e9bf1f2733885d98cebded918e80f130ec85506e2779d364dd83a8',
+    'c7724575abe95602caac714cbc1e650ca3f2355e76dbb5ffb6065c194a3847',
     'hex'
   ),
-  recoveryParam: 1,
+  recoveryParam: 0,
 };
 
 const serialized =
-  '0x01df4e7bbad23da5e5266c2d724b5c892c9cc25cdb8a5c3371bac53013f3d5270715136cb5e9bf1f2733885d98cebded918e80f130ec85506e2779d364dd83a81c';
+  '0x03e243c5b004c89cd9c66fd1c8361c2d42226816214ac113f441027f165c6a7800c7724575abe95602caac714cbc1e650ca3f2355e76dbb5ffb6065c194a38471b';
 
 describe('rsv-signature', () => {
   it('exportRecoveryParam', () => {

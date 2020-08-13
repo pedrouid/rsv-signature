@@ -23,8 +23,8 @@ export function importRecoveryParam(v: string): number | undefined {
 
 export function serializeSignature(sig: SignatureOptions): string {
   return encUtils.addHexPrefix(
-    encUtils.sanitizeBytes(sig.r.toString(16), 2) +
-      encUtils.sanitizeBytes(sig.s.toString(16), 2) +
+    encUtils.padLeft(sig.r.toString(16), 64) +
+      encUtils.padLeft(sig.s.toString(16), 64) +
       exportRecoveryParam(sig.recoveryParam) || ''
   );
 }
