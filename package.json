@@ -1,7 +1,7 @@
 {
   "name": "rsv-signature",
   "description": "RSV Signature Serialization",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Pedro Gomes <github.com/pedrouid>",
   "license": "MIT",
   "keywords": [
@@ -37,8 +37,8 @@
     "prepare": "yarn lint && yarn build && yarn test"
   },
   "dependencies": {
-    "enc-utils": "^2.2.1",
-    "bn.js": "^4.8.0"
+    "bn.js": "^4.8.0",
+    "enc-utils": "^2.2.1"
   },
   "devDependencies": {
     "@types/bn.js": "4.11.6",
